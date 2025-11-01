@@ -11,7 +11,7 @@
 }
 
 body{
-    background-image: url('C:\Users\suarez\Documents\sdf\sdf04\sdf-finals-pics\lessons-bg.jpg'); 
+    background-image: url('../sdf-finals-pics/bg4.jpg'); 
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -63,7 +63,7 @@ body{
 .container .heading{
   font-size: 40px;
   margin-bottom: 20px;
-  color:#4a4e69;
+  color:#5e5da3;
 }
 
 .container .box-container{
