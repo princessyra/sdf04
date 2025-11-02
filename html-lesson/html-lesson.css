@@ -51,15 +51,17 @@ body {
 }
 
 /* ===============================
-   VIDEO SECTION
+   VIDEO SECTION (UPDATED)
 ================================== */
-.video-section iframe {
-  width: 1000px;
-  height: 700px;
+.video-section video {
+  width: 1000px;       /* 🔹 Change this value to adjust video width */
+  height: 705px;      /* 🔹 Change this value to adjust video height */
   border-radius: 10px;
+  object-fit: cover;  /* Keeps the video nicely cropped instead of stretched */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
   border: none;
 }
+
 
 /* ===============================
    ACCORDION CONTAINER
