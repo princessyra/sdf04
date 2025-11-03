@@ -58,7 +58,7 @@ body {
   height: 705px;    
   border-radius: 10px;
   object-fit: cover; 
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 15px rgba(0, 2, 148, 0.815);
   border: none;
 }
 
@@ -83,10 +83,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(67, 30, 170, 0.1);
   border-radius: 0;
   backdrop-filter: blur(10px);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(52, 16, 211, 0.2);
   transition: color 0.3s ease, background-color 0.3s ease;
   margin-bottom: 1rem;
 }
@@ -119,8 +119,8 @@ body {
   overflow: hidden;
   transition: max-height 0.4s ease-out;
   padding: 0 1.2rem;
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2); */
   border-top: none;
   border-radius: 0 0 0.3rem 0.3rem;
 }
@@ -132,14 +132,14 @@ body {
 .lesson, .quiz {
   margin-bottom: 1rem;
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(25, 0, 255, 0.6);
   border-radius: 0.5rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .lesson span, .quiz span {
   font-weight: bold;
-  color: #a20021;
+  color: #635fe9;
   margin-right: 10px;
 }
 
