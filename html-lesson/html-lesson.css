@@ -9,7 +9,7 @@
 
 body {
   font-family: sans-serif;
-  background: url('../new-sdf-pics/new-html-lesson-bg.jpg') no-repeat center center fixed;
+  background: url('../new-sdf-pics/second.jpg') no-repeat center center fixed;
   background-size: cover;
   color: white;
   min-height: 100vh;
@@ -21,18 +21,18 @@ body {
 ================================== */
 .heading {
   font-size: 30px;
-  text-align: right;
+  text-align: left;
   padding-top: 20px;
-  color: #2645ce;
-  margin-right: 100px;
+  color: #68cae2;
+  margin-left: 100px;
 }
 
 .topic {
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-left: 10%;
-  text-align: left;
-  color: #1e056b;
+  padding-left: 0%;
+  text-align: center;
+  color: #c5cbcf;
   font-size: 32px;
   font-weight: bold;
 }
