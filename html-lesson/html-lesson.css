@@ -20,9 +20,9 @@ body {
    HEADING AND TEXT
 ================================== */
 .heading {
-  font-size: 30px;
+  font-size: 40px;
   text-align: left;
-  padding-top: 20px;
+  padding: 20px;
   color: #68cae2;
   margin-left: 100px;
 }
@@ -33,7 +33,7 @@ body {
   padding-left: 0%;
   text-align: center;
   color: #c5cbcf;
-  font-size: 32px;
+  font-size: 50px;
   font-weight: bold;
 }
 
@@ -54,8 +54,8 @@ body {
    VIDEO SECTION (UPDATED)
 ================================== */
 .video-section video {
-  width: 1000px;   
-  height: 705px;    
+  width: 900px;   
+  height: 605px;    
   border-radius: 10px;
   object-fit: cover; 
   box-shadow: 0 4px 15px rgba(92, 93, 161, 0.815);
@@ -69,7 +69,7 @@ body {
 .accordion {
     margin-top: 210px;
   flex-shrink: 0;
-  width: 500px;   
+  width: 600px;   
   height: auto;    
 }
 
@@ -99,6 +99,7 @@ body {
 .accordion-title {
   font-weight: bold;
   color: #c6c6ff;
+  font-size: 25px;
 }
 
 .accordion-icon {
