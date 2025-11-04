@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Montserrat', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
+   transition: all .2s linear;
+}
+
+body {
+  background-image: url('../sdf-finals-pics/welcome-bg.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.logo {
+    display: block;
+    margin: 0 auto 20px; 
+}
+.main {
+    text-align: center;
+    padding: 100px 20px;
+    background: transparent;
+    border: 2px solid pink;
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    margin: 50px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #cdb4db;
+}
+
+.main p {
+    font-size: 18px;
+    color: #ffc8dd;
+    margin-bottom: 40px;
+}
+
+.wrapper {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+
+a {
+    display: inline-block;
+    padding: 15px 30px; 
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #ffafcc;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.5s;
+    text-decoration: none; 
+    position: relative;
+    border: 2px solid #ffafcc; 
+    overflow: hidden;
+    z-index: 1;
+    background-color: transparent;
+}
+
+
+a:hover {
+    background-color: #ffafcc;
+    color: #050801;
+    box-shadow: 0 0 5px #ffafcc, 0 0 25px #ffafcc, 0 0 50px #ffafcc, 0 0 200px #03e9f4;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #ffafcc;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+a:hover::before {
+    left: 0;
+}
+
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  padding:25px 20px;
+}
+
+.container .heading {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #ffafcc;
+  text-shadow: 0 0 10px rgba(255, 175, 204, 0.8);
+}
