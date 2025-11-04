@@ -33,6 +33,8 @@ body {
   padding-left: 0%;
   text-align: center;
   color: #c5cbcf;
+  text-shadow: 0 0 10px rgba(175, 230, 255, 0.8);
+
   font-size: 50px;
   font-weight: bold;
 }
