@@ -27,7 +27,7 @@ const questions = [
     ]
   },
   {
-    question: "What is the capital of korea?What does the <a> tag define?",
+    question: "What does the <a> tag define?",
     answers: [
         { text: "A hyperlink", correct: true },
         { text: "A form", correct: false },
