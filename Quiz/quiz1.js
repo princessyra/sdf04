@@ -17,7 +17,7 @@ const questions = [
         { text: "Rome", correct: false },
     ]
   },
-    {
+  {
     question: "What is the capital of ph?",
     answers: [
         { text: "Berlin", correct: false },
@@ -26,17 +26,17 @@ const questions = [
         { text: "Manila", correct: true },
     ]
   },
-    {
+  {
     question: "What is the capital of korea?",
     answers: [
-        { text: "seoul", correct: true },
+        { text: "Seoul", correct: true },
         { text: "Madrid", correct: false },
         { text: "Paris", correct: false },
         { text: "Rome", correct: false },
     ]
   },
-    {
-    question: "What is the capital of mexico?",
+  {
+    question: "What is the capital of Mexico?",
     answers: [
         { text: "Berlin", correct: false },
         { text: "Mexico City", correct: true },
@@ -59,19 +59,20 @@ function startQuiz() {
   nextButton.innerHTML = "Next";
   showQuestion();
 }
+
 function showQuestion() {
-    resetState();
+  resetState();
   let currentQuestion = questions[currentQuestionIndex];
   let questionNo = currentQuestionIndex + 1;
   questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
-  currentQuestion.answers.forEach(answer=> {
+  currentQuestion.answers.forEach(answer => {
     const button = document.createElement("button");
     button.innerHTML = answer.text;
-    button.classList.add ("btn");
+    button.classList.add("btn");
     answerButtons.appendChild(button);
     if (answer.correct) {
-        button.dataset.correct = answer.correct;
+      button.dataset.correct = answer.correct;
     }
     button.addEventListener("click", selectAnswer);
   });
@@ -87,43 +88,44 @@ function resetState() {
 function selectAnswer(e) {
   const selectedBtn = e.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
-    if (isCorrect) {
-        selectedBtn.classList.add("correct");
-        score++;
-    } else {
-        selectedBtn.classList.add("incorrect");
+  if (isCorrect) {
+    selectedBtn.classList.add("correct");
+    score++;
+  } else {
+    selectedBtn.classList.add("incorrect");
+  }
+  Array.from(answerButtons.children).forEach(button => {
+    if (button.dataset.correct === "true") {
+      button.classList.add("correct");
     }
-    Array.from(answerButtons.children).forEach(button => {
-        if (button.dataset.correct === "true") {
-            button.classList.add("correct");
-        }
-        button.disabled = true;
-    });
-    nextButton.style.display = "block";
+    button.disabled = true;
+  });
+  nextButton.style.display = "block";
 }
 
 function showScore() {
-    resetState();
-    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
-    nextButton.innerHTML = "Retake Quiz";
-    nextButton.style.display = "block";
+  resetState();
+  questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+  nextButton.innerHTML = "Next Module";
+  nextButton.style.display = "block";
 }
 
 function handleNextButton() {
-    currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
-        showQuestion();
-    } else {
-        showScore();
-    }
+  currentQuestionIndex++;
+  if (currentQuestionIndex < questions.length) {
+    showQuestion();
+  } else {
+    showScore();
+  }
 }
 
 nextButton.addEventListener("click", () => {
-    if (currentQuestionIndex < questions.length) {
-        handleNextButton();
-    }
-    else {
-        startQuiz();
-    }
+  if (currentQuestionIndex < questions.length) {
+    handleNextButton();
+  } else {
+    window.location.href = "../html-lesson/html-lesson.html";
+  }
 });
+
+
 startQuiz();
