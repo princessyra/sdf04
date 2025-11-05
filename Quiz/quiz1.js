@@ -1,47 +1,47 @@
 const questions = [
   {
-    question: "What is the capital of France?",
+    question: "What does HTML stand for?",
     answers: [
-        { text: "Berlin", correct: false },
-        { text: "Madrid", correct: false },
-        { text: "Paris", correct: true },
-        { text: "Rome", correct: false },
+        { text: "Hyperlinks and Text Markup Language", correct: false },
+        { text: "Home Tool Markup Language", correct: false },
+        { text: "Hyper Text Markup Language", correct: true },
+        { text: "Hyper Tool Making Language", correct: false },
     ]
   },
   {
-    question: "What is the capital of France?",
+    question: "Which tag is used to create a paragraph in HTML?",
     answers: [
-        { text: "Berlin", correct: false },
-        { text: "Madrid", correct: false },
-        { text: "Paris", correct: true },
-        { text: "Rome", correct: false },
+        { text: "div", correct: false },
+        { text: "h1", correct: false },
+        { text: "p", correct: true },
+        { text: "br", correct: false },
     ]
   },
   {
-    question: "What is the capital of ph?",
+    question: "Which tag is used to display an image?",
     answers: [
-        { text: "Berlin", correct: false },
-        { text: "Madrid", correct: false },
-        { text: "Paris", correct: false },
-        { text: "Manila", correct: true },
+        { text: "image", correct: false },
+        { text: "pic", correct: false },
+        { text: "src", correct: false },
+        { text: "img", correct: true },
     ]
   },
   {
-    question: "What is the capital of korea?",
+    question: "What is the capital of korea?What does the <a> tag define?",
     answers: [
-        { text: "Seoul", correct: true },
-        { text: "Madrid", correct: false },
-        { text: "Paris", correct: false },
-        { text: "Rome", correct: false },
+        { text: "A hyperlink", correct: true },
+        { text: "A form", correct: false },
+        { text: "A table", correct: false },
+        { text: "A list", correct: false },
     ]
   },
   {
-    question: "What is the capital of Mexico?",
+    question: "Which tag is used to make text bold in HTML?",
     answers: [
-        { text: "Berlin", correct: false },
-        { text: "Mexico City", correct: true },
-        { text: "Paris", correct: false },
-        { text: "Rome", correct: false },
+        { text: "i", correct: false },
+        { text: "Both B and C", correct: true },
+        { text: "b", correct: false },
+        { text: "strong", correct: false },
     ]
   }
 ];
