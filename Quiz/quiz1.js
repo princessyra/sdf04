@@ -39,7 +39,7 @@ const questions = [
     question: "Which tag is used to make text bold in HTML?",
     answers: [
         { text: "i", correct: false },
-        { text: "Both B and C", correct: true },
+        { text: "Both C and D", correct: true },
         { text: "b", correct: false },
         { text: "strong", correct: false },
     ]
