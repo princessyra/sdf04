@@ -17,6 +17,32 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+/* Clean, simple Members link — no hover effects at all */
+.top-right-link {
+  all: unset;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #ffafcc;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Disable any pseudo-elements or hover effects */
+.top-right-link::before {
+  content: none !important;
+}
+
+.top-right-link:hover {
+  color: #ffafcc;
+  text-shadow: none;
+  background: none;
+  box-shadow: none;
+}
+
 
 
 .logo {
