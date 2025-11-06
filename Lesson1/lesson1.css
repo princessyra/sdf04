@@ -12,16 +12,25 @@
 body {
   background: #22223b;
   color: white;
+  padding-top: 100px;   /* space for fixed navbar */
+  padding-bottom: 100px; /* space for fixed button bar */
 }
 
 /* === NAVBAR === */
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2a2a4b;
+  background-color: rgba(42, 42, 75, 0.8); /* semi-transparent */
+  backdrop-filter: blur(10px); /* blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
   padding: 10px 30px;
   border-bottom: 2px solid #b5179e;
+  z-index: 1000;
 }
 
 /* === LOGO + TEXT === */
@@ -50,14 +59,19 @@ body {
   font-size: 18px;
   padding: 8px 18px;
   font-weight: 500;
+  text-decoration: none;
+}
+
+.home-link:hover {
+  color: #b5179e;
 }
 
 /* === HEADING === */
 .topic {
-  margin: 20px 0;
+  margin: 25px 0;
   text-align: center;
   color: #9a8c98;
-  font-size: 24px;
+  font-size: 26px;
   letter-spacing: 1px;
 }
 
@@ -145,10 +159,16 @@ body {
 
 /* === BUTTONS === */
 .button-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 9%;
+  padding: 20px 9%;
+  z-index: 1000;
 }
 
 .button {
@@ -160,6 +180,7 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-transform: none;
+  text-decoration: none;
 }
 
 .back-button {
