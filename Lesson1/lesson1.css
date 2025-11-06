@@ -1,16 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 
-/* === GLOBAL RESET === */
+/* === RESET === */
 * {
-  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  text-transform: capitalize;
-  transition: all .2s linear;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* === BODY === */
@@ -22,48 +17,47 @@ body {
 /* === NAVBAR === */
 .navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 10px 30px;
+  align-items: center;
   background-color: #2a2a4b;
+  padding: 10px 30px;
   border-bottom: 2px solid #b5179e;
+}
+
+/* === LOGO + TEXT === */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .logo img {
   height: 70px;
   width: auto;
+  display: block;
+}
+
+.academy-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #e1cfe2;
+  letter-spacing: 1px;
 }
 
 /* === HOME BUTTON === */
 .home-link {
   color: #f2e9e4;
   font-size: 18px;
-  background-color: #4a4e69;
   padding: 8px 18px;
-  border-radius: 6px;
   font-weight: 500;
-  transition: background-color 0.3s, color 0.3s;
 }
 
-.home-link:hover {
-  background-color: #b5179e;
-  color: #fff;
-}
-
-/* === HEADINGS === */
-.heading {
-  font-size: 24px;
-  text-align: left;
-  padding: 20px 30px 0;
-  color: #f2e9e4;
-  letter-spacing: 1px;
-}
-
+/* === HEADING === */
 .topic {
   margin: 20px 0;
   text-align: center;
   color: #9a8c98;
-  font-size: 22px;
+  font-size: 24px;
   letter-spacing: 1px;
 }
 
@@ -82,7 +76,7 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
-/* === TIMELINE SECTION === */
+/* === TIMELINE === */
 .timeline {
   display: flex;
   justify-content: center;
@@ -108,7 +102,7 @@ body {
   color: #f2e9e4;
 }
 
-.timeline-column .timeline-box {
+.timeline-box {
   border-left: 2px solid #b5179e;
   padding-left: 10px;
 }
@@ -180,15 +174,11 @@ body {
   opacity: 0.9;
 }
 
-/* === RESPONSIVE DESIGN === */
+/* === RESPONSIVE === */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     gap: 10px;
-  }
-
-  .timeline {
-    padding: 20px;
   }
 
   .image-container {
