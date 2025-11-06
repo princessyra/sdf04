@@ -1,27 +1,79 @@
+<!-- ===== HTML5 Declaration =====
+     Tells the browser this document is written in HTML5.
+-->
 <!DOCTYPE html>
+
+<!-- ===== Root HTML Element =====
+     Wraps all content in the page.
+-->
 <html>
 <head>
+    <!-- ===== Page Title =====
+         Sets the name of the webpage shown on the browser tab.
+    -->
     <title>Module 1 Quiz</title>
+
+    <!-- ===== External CSS Link =====
+         Connects this HTML file to the stylesheet (quiz1.css)
+         which contains all the visual design.
+    -->
     <link rel="stylesheet" href="quiz1.css">
 </head>
-<body>
 
+<body>
+    <!-- ===== Logo Image =====
+         Displays a logo on the top-left side of the page.
+         The 'src' specifies the image location.
+         The 'alt' is alternative text if the image fails to load.
+    -->
     <img src="../sdf-finals-pics/logo.png" class="logo" alt="Logo">
 
+    <!-- ===== Main App Container =====
+         Holds the entire quiz layout including the title,
+         question, and answer buttons.
+    -->
     <div class="app"> 
+
+        <!-- ===== Quiz Title =====
+             Displays the main title or name of the quiz module.
+        -->
         <h1>Module 1 Quiz</h1>  
+
+        <!-- ===== Quiz Section =====
+             Contains the question and answer area of the quiz.
+        -->
         <div class="quiz">
+
+            <!-- ===== Question Text =====
+                 Displays the current question.
+                 The 'id' allows JavaScript to dynamically update the text.
+            -->
             <h2 id="question">Question goes here</h2>
+
+            <!-- ===== Answer Buttons Container =====
+                 Holds all four possible answer buttons.
+                 Each button represents one possible answer.
+                 The 'id' lets JavaScript add or remove answers dynamically.
+            -->
             <div id="answer-buttons">
                 <button class="btn">Answer 1</button>
                 <button class="btn">Answer 2</button>
                 <button class="btn">Answer 3</button>
                 <button class="btn">Answer 4</button>
             </div>
+
+            <!-- ===== Next Button =====
+                 Appears after answering a question.
+                 Moves to the next question when clicked.
+            -->
             <button id="next-btn">Next</button>
         </div>
     </div>
 
+    <!-- ===== JavaScript Link =====
+         Connects this HTML to the quiz1.js file,
+         which contains all quiz logic and interactivity.
+    -->
     <script src="quiz1.js"></script>
 </body>
 </html>
