@@ -62,7 +62,11 @@ body {
 .btn:hover:not([disabled]) {
     background: #9ceaef;
     color: #003249;
+    box-shadow: 0 0 15px #9ceaef; /* adds a soft blur glow */
+    transform: scale(1.05); /* slightly enlarges on hover */
+    transition: all 0.3s ease; /* smooth animation */
 }
+
 
 .btn:disabled {
     cursor: no-drop;
@@ -84,8 +88,24 @@ body {
 .correct {
     background: #b2ff9e;
     color: #003200;
+    box-shadow: 0 0 20px 5px rgba(178, 255, 158, 0.8); /* soft green glow */
+    transition: all 0.3s ease;
+}
+
+.correct:hover {
+    box-shadow: 0 0 35px 10px rgba(178, 255, 158, 1); /* brighter glow on hover */
+    transform: scale(1.05);
 }
 
 .incorrect {
     background: #ff7b7b;
+    color: #320000;
+    box-shadow: 0 0 20px 5px rgba(255, 123, 123, 0.8); /* red glow */
+    transition: all 0.3s ease;
 }
+
+.incorrect:hover {
+    box-shadow: 0 0 35px 10px rgba(255, 123, 123, 1); /* brighter red glow on hover */
+    transform: scale(1.05);
+}
+
