@@ -1,3 +1,8 @@
+/* ===== Global Reset & Base Font =====
+   Removes default browser margins and paddings, 
+   applies the Poppins font to all elements,
+   and ensures consistent box sizing.
+*/
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +10,21 @@
     box-sizing: border-box;
 }
 
+/* ===== Body Style =====
+   Sets a fixed background image that covers the entire screen,
+   white text color for readability, and ensures full height.
+*/
 body {
     background: url('bg7.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
-    min-height: 100vh;}
+    min-height: 100vh;
+}
 
+/* ===== Logo =====
+   Positions the logo image in the top-left corner 
+   with a fixed size for consistency.
+*/
 .logo {
     position: absolute; 
     top: 20px;
@@ -18,6 +32,10 @@ body {
     width: 80px;
 }
 
+/* ===== Main App Container =====
+   Centers the quiz section with rounded corners, 
+   padding, and text alignment for a clean layout.
+*/
 .app {
     width: 1200px;
     margin: 100px auto 0;
@@ -26,6 +44,10 @@ body {
     text-align: center;
 }
 
+/* ===== App Title =====
+   Styles the main heading with large, bold, 
+   light-blue text and a bottom border.
+*/
 .app h1 {
     font-size: 35px;
     color: #72ddf7;
@@ -34,16 +56,26 @@ body {
     padding-bottom: 30px;
 }
 
+/* ===== Quiz Section =====
+   Adds vertical spacing around the question and answer section.
+*/
 .quiz {
     padding: 20px 0;
 }
 
+/* ===== Question Text =====
+   Increases text size and adds bright blue color for visibility.
+*/
 .quiz h2 {
     font-size: 25px;
     color: #4cc9f0;
     font-weight: 600;
 }
 
+/* ===== Answer Buttons =====
+   Transparent buttons with colored text, borders, 
+   and smooth transitions for hover effects.
+*/
 .btn {
   background: transparent;
   color: #c4fff9;
@@ -58,20 +90,29 @@ body {
   transition: all 0.3s;
 }
 
-
+/* ===== Hover Effect for Buttons =====
+   Changes color, adds glowing blur, 
+   and slightly enlarges the button when hovered.
+*/
 .btn:hover:not([disabled]) {
     background: #9ceaef;
     color: #003249;
-    box-shadow: 0 0 15px #9ceaef; /* adds a soft blur glow */
-    transform: scale(1.05); /* slightly enlarges on hover */
-    transition: all 0.3s ease; /* smooth animation */
+    box-shadow: 0 0 15px #9ceaef;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
 
-
+/* ===== Disabled Buttons =====
+   Makes the button unclickable and shows a no-drop cursor.
+*/
 .btn:disabled {
     cursor: no-drop;
 }
 
+/* ===== Next Button =====
+   Custom-styled navigation button hidden by default
+   until revealed by JavaScript.
+*/
 #next-btn {
     background: #001e4d;
     color: #fff;
@@ -85,27 +126,38 @@ body {
     display: none;
 }
 
+/* ===== Correct Answer =====
+   Highlights correct answers with green color 
+   and glowing effect for emphasis.
+*/
 .correct {
     background: #b2ff9e;
     color: #003200;
-    box-shadow: 0 0 20px 5px rgba(178, 255, 158, 0.8); /* soft green glow */
+    box-shadow: 0 0 20px 5px rgba(178, 255, 158, 0.8);
     transition: all 0.3s ease;
 }
 
+/* ===== Correct Hover Effect =====
+   Makes the glow brighter and enlarges slightly when hovered.
+*/
 .correct:hover {
-    box-shadow: 0 0 35px 10px rgba(178, 255, 158, 1); /* brighter glow on hover */
+    box-shadow: 0 0 35px 10px rgba(178, 255, 158, 1);
     transform: scale(1.05);
 }
 
+/* ===== Incorrect Answer =====
+   Highlights wrong answers with red color 
+   and a glowing red border for visibility.
+*/
 .incorrect {
     background: #ff7b7b;
     color: #320000;
-    box-shadow: 0 0 20px 5px rgba(255, 123, 123, 0.8); /* red glow */
-    transition: all 0.3s ease;
+    box-shadow: 0 0 20px 5px rgba(255, 123, 123, 0.8);
 }
 
+/* ===== Incorrect Hover Effect =====
+   Intensifies the red glow and enlarges slightly when hovered.
+*/
 .incorrect:hover {
-    box-shadow: 0 0 35px 10px rgba(255, 123, 123, 1); /* brighter red glow on hover */
-    transform: scale(1.05);
+    box-shadow: 0 0 35px 10px rgba(255, 123, 123, 1);
 }
-
